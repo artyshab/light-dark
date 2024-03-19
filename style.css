@@ -219,6 +219,7 @@ a {
      transition: 600ms all ease;
     background-color:white;
     color:black;
+    font-weight: bold;
   }
   
   .paragraph--show{

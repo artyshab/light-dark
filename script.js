@@ -1,15 +1,14 @@
 
-
-
 document.querySelector(".slider-button").addEventListener("click",()=>{
     document.querySelector(".slider").classList.toggle("active");
 });
 
 
-let toggler = document.querySelector(".card");
-let textContent = document.querySelector(".paragraph");
-let closer = document.querySelector("p");
+let togglers = document.querySelectorAll(".card");
+let textContents = document.querySelectorAll(".paragraph");
 
-toggler.addEventListener("click", () => {
-    textContent.classList.toggle("paragraph--show");
+togglers.forEach((toggler, index) => {
+    toggler.addEventListener("click", () => {
+        textContents[index].classList.toggle("paragraph--show");
+    });
 });
