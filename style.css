@@ -153,6 +153,8 @@ a {
 }
 
 
+
+
 .services-wrapper {
     display: flex;
     flex-direction: row;
@@ -175,79 +177,54 @@ a {
     width: 800px;
 }
 
-.app-idea , .app-development , .app-design , .social-media {
-    background-color: black;
-    color: white;
-    width: 290px;
-    height: 200px;
-    margin: 0px 10px;
-    cursor: pointer;
-    transition: 350ms all ease;
-    border-radius: 10px;
-    font-weight: bold;
-    position: relative;
-    overflow: hidden;
-}
 
-.paragraph {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 9999 !important;
-    transform: translateY(100%);
-}
-
-
-.app-design:hover{
-    background-color:white;
-    color: white;
-    transition: 450ms all ease;
-    color: black;
-    border: 2px solid black;
-}
-
-.app-development:hover{
-    background-color:white;
-    color: white;
-    transition: 450ms all ease;
-    color: black;
-    border: 2px solid black;
-}
-
-.app-idea:hover{
-    background-color:white;
-    color: white;
-    transition: 450ms all ease;
-    color: black;
-    border: 2px solid black;
-}
-
-.social-media:hover{
-    background-color:white;
-    color: white;
-    transition: 450ms all ease;
-    color: black;
-    border: 2px solid black;
-}
-
-.blocks-wrapper p {
-    margin-top: 90px;
-    margin-left: 5px;
-}
-
-.blocks-wrapper h1 {
-    text-align: center;
-    margin-top: 60px;
-    font-size: 1.5rem;
-}
-
-.blocks-wrapper {
+.cards {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+.card{
+    background-color:black;
+    color:white;
+    max-width:500px;
+    height: 150px;
+    width:100%;
+    margin:10px 10px;
+    border-radius:20px;
+    cursor: pointer;
+  }
+  
+  .text {
+    position:relative;
+    padding:30px;
+    width:inherit;
+    height:inherit;
+    overflow-y:hidden;
+    
+  }
+  .text h1{
+    text-align:center;
+    font-size: 1.6rem;
+  }
+  
+  .paragraph {
+     position:absolute;
+     left:0;
+     top:0;
+     width: 100%;
+     height: 100%;
+     z-index: 9999 !important;
+     transform:translateY(100%);
+     transition: 600ms all ease;
+    background-color:white;
+    color:black;
+  }
+  
+  .paragraph--show{
+    transform: translateY(0);
+      transition: 600ms ease all;
+  }
 
 
 .hero-wrapper{
@@ -423,22 +400,16 @@ a {
         padding: 20px 0px;
     }
 
-    .blocks-wrapper {
+    .cards {
         display: flex;
         flex-direction: column;
         max-width: 400px;
         max-height: 200px;
         cursor: pointer;
+        margin-bottom: 500px;
     }
 
-    .app-idea , .app-development , .app-design , .social-media {
-        background-color: black;
-        color: white;
-        width: 100%;
-        height: 100%;
-        margin: 10px auto;
-       
-    }
+  
 
    .logo-contact {
     margin: 10px 20px;
@@ -458,5 +429,20 @@ a {
     height: 250px;
     margin: 10px 0px;
    }
+
+   .hero-image {
+    display: none;
+   }
    
+   .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+   }
+
+   .contact-text {
+    width: 450px;
+   }
+
 }
