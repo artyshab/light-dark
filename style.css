@@ -445,5 +445,8 @@ a {
    .contact-text {
     width: 450px;
    }
-
+    
+   body {
+    overflow-x: hidden;
+   }
 }
