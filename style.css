@@ -46,7 +46,10 @@ body{
     margin-right: 120px;
 }
 
-.x-close img {
+.x-button {
+    background-image: url("./images/close-svgrepo-com.svg");
+    background-size: contain; /* Adjust this property to fit your needs */
+    background-repeat: no-repeat;
     width: 30px;
     height: 30px;
     margin-right: 2px;
@@ -538,4 +541,22 @@ a {
     background-color: black;
     color: white;
     border: 2px solid white;
+}
+
+.dark .navigation-content {
+    background-color: black;
+    color: white;
+}
+
+.dark .x-button {
+    background-image: url(./images/close-svgrepo-com-white.svg);
+}
+
+.dark .nav-list li a {
+    color: white;
+}
+
+
+.dark .contact-names label {
+    color: black;
 }
