@@ -26,3 +26,15 @@ togglers.forEach((toggler, index) => {
         textContents[index].classList.toggle("paragraph--show");
     });
 });
+
+
+document.querySelector(".slider-button").addEventListener("click",()=>{
+    document.body.classList.toggle("dark");
+})
+
+
+
+
+
+
+
